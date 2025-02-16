@@ -15,12 +15,12 @@ const data = [
   {
     name: 'Girls',
     count: 46,
-    fill: '#8884d8',
+    fill: '#c3ebfa',
   },
   {
     name: 'Boys',
     count: 54,
-    fill: '#83a6ed',
+    fill: '#fae27c',
   },
 ];
 
