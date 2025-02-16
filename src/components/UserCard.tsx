@@ -12,7 +12,7 @@ const UserCard = ({ type }: { type: string }) => {
       </div>
 
       <h1 className="text-2xl font-semibold my-4">1,456</h1>
-      <h2>{type}</h2>
+      <h2 className="capitalize font-medium text-gray-500 text-sm ">{type}</h2>
     </div>
   );
 };
