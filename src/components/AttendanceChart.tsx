@@ -50,9 +50,16 @@ const AttendanceChart = () => {
       <ResponsiveContainer width="100%" height="90%">
         <BarChart width={500} height={300} data={data} barSize={20}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
+          <XAxis
+            dataKey="name"
+            axisLine={false}
+            tick={{ fill: '#d1d5db' }}
+            tickLine={false}
+          />
+          <YAxis axisLine={false} tick={{ fill: '#d1d5db' }} tickLine={false} />
+          <Tooltip
+            contentStyle={{ borderRadius: '10px', borderColor: 'lightgray' }}
+          />
           <Legend
             align="left"
             verticalAlign="top"
