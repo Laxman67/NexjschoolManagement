@@ -46,14 +46,14 @@ const Announcements = () => {
         {announcements.map((announcement) => (
           <div className="rounded-md p-4 bg-lamaSkyLight mt-4">
             <div className="flex items-center justify-between">
-              <h1 className="font-semibold text-gray-600">
+              <h1 className=" text-sm font-semibold text-gray-700">
                 {announcement.title}
               </h1>
               <span className="text-sm text-gray-400 italic">
                 {announcement.time}
               </span>
             </div>
-            <span className="text-sm mt-3">{announcement.description}</span>
+            <span className="text-xs mt-3">{announcement.description}</span>
           </div>
         ))}
       </div>
