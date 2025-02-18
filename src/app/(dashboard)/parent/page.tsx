@@ -2,7 +2,7 @@ import Announcements from '@/components/Announcements';
 import BigCalender from '@/components/BigCalender';
 import React from 'react';
 
-const TeacherPage = () => {
+const ParentPage = () => {
   return (
     <div className="p-4 flex gap-4 flex-col xl:flex-row">
       {/* Left */}
@@ -22,4 +22,4 @@ const TeacherPage = () => {
   );
 };
 
-export default TeacherPage;
+export default ParentPage;
