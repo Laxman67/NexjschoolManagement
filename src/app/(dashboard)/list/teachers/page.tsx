@@ -1,6 +1,41 @@
 import Paginition from '@/components/Paginition';
+import Table from '@/components/Table';
 import TableSearch from '@/components/TableSearch';
 import Image from 'next/image';
+
+const columns = [
+  { header: 'Info', accessor: 'info' },
+  { header: 'Teacher ID', accessor: 'teacherId' },
+  {
+    header: 'Teacher ID',
+    accessor: 'teacherId',
+    className: 'hiddent md:table-cell',
+  },
+  {
+    header: 'Subjects',
+    accessor: 'subjects',
+    className: 'hiddent md:table-cell',
+  },
+  {
+    header: 'Classes',
+    accessor: 'classes',
+    className: 'hiddent md:table-cell',
+  },
+  {
+    header: 'Phone',
+    accessor: 'phone',
+    className: 'hiddent lg:table-cell',
+  },
+  {
+    header: 'Address',
+    accessor: 'address',
+    className: 'hiddent lg:table-cell',
+  },
+  {
+    header: 'Actions',
+    accessor: 'actions',
+  },
+];
 
 const TeachersList = () => {
   return (
@@ -23,8 +58,9 @@ const TeachersList = () => {
           </div>
         </div>
       </div>
+
       {/* List */}
-      <div className=""></div>
+      <Table columns={columns} />
       {/* Paginition */}
       <Paginition />
     </div>
