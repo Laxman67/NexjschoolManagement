@@ -18,31 +18,30 @@ type Teacher = {
 };
 
 const columns = [
-  { header: 'Info', accessor: 'info' },
+  { header: 'Info', accessor: 'info', className: 'text-center' },
   {
     header: 'Teacher ID',
     accessor: 'teacherId',
-    className: 'hiddent md:table-cell',
   },
   {
     header: 'Subjects',
     accessor: 'subjects',
-    className: 'hiddent md:table-cell',
+    className: 'hidden md:table-cell',
   },
   {
     header: 'Classes',
     accessor: 'classes',
-    className: 'hiddent md:table-cell',
+    className: 'hidden lg:table-cell',
   },
   {
     header: 'Phone',
     accessor: 'phone',
-    className: 'hiddent lg:table-cell',
+    className: 'hidden lg:table-cell',
   },
   {
     header: 'Address',
     accessor: 'address',
-    className: 'hiddent lg:table-cell',
+    className: 'hidden lg:table-cell',
   },
   {
     header: 'Actions',
@@ -85,6 +84,7 @@ const TeachersList = () => {
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
               <Image src="/view.png" alt={item.name} width={16} height={16} />
             </button>
+            {/* If Role of the user is ADMIn */}
             {role === 'admin' && (
               <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
                 <Image
