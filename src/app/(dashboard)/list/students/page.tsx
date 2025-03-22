@@ -73,7 +73,7 @@ const StudentListPage = () => {
       <td>
         <div className="flex items-center gap-2">
           <Link
-            href={`/list/teachers/${item.id}`}
+            href={`/list/students/${item.id}`}
             className="flex items-center justify-between gap-2"
           >
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">

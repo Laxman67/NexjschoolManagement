@@ -36,7 +36,7 @@ const SubjectsList = () => {
       <td>
         <div className="flex items-center gap-2">
           <Link
-            href={`/list/teachers/${item.id}`}
+            href={`/list/subjects/${item.id}`}
             className="flex items-center justify-between gap-2"
           >
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
@@ -63,7 +63,7 @@ const SubjectsList = () => {
     <div className="bg-white p-4 rounded-md flex-1 m-4 h-[100%]">
       {/* Top */}
       <div className="flex items-center justify-between">
-        <h1 className="hidden md:block text-lg font-semibold">All Parents</h1>
+        <h1 className="hidden md:block text-lg font-semibold">All Subjects</h1>
         <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
           <TableSearch />
           <div className="flex items-center gap-4 self-end">
