@@ -44,7 +44,10 @@ const Announcements = () => {
 
       <div className="flex flex-col gap-4">
         {announcements.map((announcement) => (
-          <div className="rounded-md p-4 bg-lamaSkyLight mt-4">
+          <div
+            className="rounded-md p-4 bg-lamaSkyLight mt-4"
+            key={announcement.id}
+          >
             <div className="flex items-center justify-between">
               <h1 className=" text-sm font-semibold text-gray-700">
                 {announcement.title}
